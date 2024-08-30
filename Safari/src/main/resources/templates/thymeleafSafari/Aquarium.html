@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Aquarium</title>
+    <link rel="stylesheet" th:href="@{/css/Aquarium.css}"/>
+    <link rel="stylesheet" href="../../static/css/Aquarium.css"/>
+</head>
+<body>
+<div class="wrap">
+    <h1 class="header">Aquarium</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+        <tr class="tb_title">
+            <th>이름</th>
+            <th>주소</th>
+            <th>open</th>
+            <th>close</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="tb_info" th:each="members : ${userId}">
+            <td th:text="${members.userId}"></td>
+            <td th:text="${members.userAlias}"></td>
+            <td th:text="${members.userName}"></td>
+            <td th:text="${members.userEmail}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="menu-wrap">
+        <a href="http://localhost:8111/choice/select">Choice</a>
+    </div>
+
+    <img th:src="@{/img/safariback2.png}" />
+    <!-- <img src="../../static/img/safariback2.png" alt="에코이미지"> -->
+</div>
+</body>
+</html>

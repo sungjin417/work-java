@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>New Employee</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+<body class="container">
+<div class="form-container">
+    <h1>신규 회원 등록</h1>
+    <form th:action="@{/emp/insert}" th:object="${employees}" method="post">
+        <div>
+            <label for="id">회원 아이디</label>
+            <input type="text" id="id" th:field="*{id}" />
+        </div>
+        <div>
+            <label for="username">이름</label>
+            <input type="text" id="username" th:field="*{username}" />
+        </div>
+        <div>
+            <label for="passwordHash">비밀번호</label>
+            <input type="text" id="passwordHash" th:field="*{passwordHash}" />
+        </div>
+        <div>
+            <label for="email">email</label>
+            <input type="text" id="email" th:field="*{email}" />
+        </div>
+        <div>
+            <label for="hintQuestion">힌트 질문</label>
+            <input type="text" id="hintQuestion" th:field="*{hintQuestion}" />
+        </div>
+        <div>
+            <label for="hintAnswer">힌트 정답</label>
+            <input type="text" id="hintAnswer" th:field="*{hintAnswer}" />
+        </div>
+        <div>
+            <button type="submit">등록</button>
+        </div>
+    </form>
+</div>
+</body>
+</html>

@@ -1,0 +1,106 @@
+body {
+    height: 100%;
+    padding: 3%;
+    margin: 0;
+}
+.wrap {
+    max-width: 2900px;
+    margin: 0 auto;
+    background-color: #FDF5E6;
+}
+.header {
+    color: #AE5E1A;
+    text-align: center;
+    padding: 70px 0 50px;
+    margin: 0;
+}
+form {
+    margin: 0 auto;
+    width: 270px;
+ }
+.inputbox_css {
+    border-width: 1px;
+    width: 100%;
+    height: 46px;
+    margin-bottom: 12px;
+
+    border-radius: 23px;
+    line-height: 46px;
+    text-align: left;
+    background-color: rgba(255, 255, 255, 1);
+    color: #C2722E;
+    font-weight: 700;
+}
+.inputbox_css > label {
+    width: 30%;
+    text-align: left;
+
+    padding-left: 20px;
+}
+input {
+    border-width: 0;
+}
+.btnbox {
+    text-align: center;
+    margin-top: 42px;
+}
+button {
+    width: 100px;
+    height: 40px;
+    background-color: #FDF5E6;
+
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 20px;
+    border-color: #8B5927;
+    color: #8B5927;
+    font-weight: 800;
+    font-size: 14px;
+
+    cursor: pointer;
+    transition: linear 0.3s;
+}
+.btnbox :hover {
+    background-color: #9F814F;
+    color: white;
+}
+
+.menu-wrap {
+    margin-top: 60px;
+    text-align: center;
+}
+
+.menu-wrap  a {
+    display: inline-block;
+    padding: 15px 25px;
+    margin-right: 10px;
+
+    border: 3px solid #8B5927;
+    border-radius: 40px;
+    box-sizing:border-box;
+
+    line-height: 16px;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #8B5927;
+
+    background-color: #FDF5E6;
+
+    transition: linear 0.3s;
+
+}
+.menu-wrap a:last-child {
+    margin-right: 0;
+}
+
+.menu-wrap  a:hover {
+    background-color: #9F814F;
+    color: white;
+}
+
+.wrap img {
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+}

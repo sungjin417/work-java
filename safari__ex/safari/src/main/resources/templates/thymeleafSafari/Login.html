@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang = "en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" th:href="@{/css/Login.css}"/>
+    <link rel="stylesheet" href="../../static/css/Login.css"/>
+</head>
+<body>
+<div class="wrap">
+    <h1 class="header">Login</h1>
+    <table border="1" style="border-collapse: collapse;">
+        <thead>
+        <tr class="tb_title">
+            <th>아이디</th>
+            <th>이름</th>
+            <th>비밀번호</th>
+            <th>이메일</th>
+            <th>전화번호</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="tb_info" th:each="members : ${userId}">
+            <td th:text="${members.userId}"></td>
+            <td th:text="${members.userAlias}"></td>
+            <td th:text="${members.userName}"></td>
+            <td th:text="${members.userEmail}"></td>
+            <td th:text="${members.userPhone}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <div class="menu-wrap">
+        <a href="http://localhost:8118/ecohero/menu">Home</a>
+        <a href="http://localhost:8118/members/insert">SignUp</a>
+    </div>
+
+    <img th:src="@{/img/safariback2.png}" />
+    <!-- <img src="../../static/img/safariback2.png" alt="에코이미지"> -->
+</div>
+</body>
+</html>

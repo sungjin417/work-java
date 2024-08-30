@@ -1,0 +1,40 @@
+body {
+    height: 100%;
+    padding: 3%;
+    margin: 0;
+}
+.wrap {
+    max-width: 2900px;
+    margin: 0 auto;
+    height: 100%;
+    background-color: #FDF5E6;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+div.inner_wrap {
+    width: 100%;
+    padding-top: 200px;
+}
+p {
+    color: #AE5E1A;
+    font-size: 30px;
+    font-weight: 900;
+    text-align: center;
+}
+a {
+    display: block;
+    font-size: 23px;
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #C2722E;
+}
+a:hover {
+    color: #9F814F;
+}
+
+.wrap img {
+    margin-top: 100px;
+    display: block;
+    width: 100%;
+}

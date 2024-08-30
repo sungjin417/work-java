@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Choice</title>
+    <link rel="stylesheet" th:href="@{/css/Choice.css}"/>
+    <link rel="stylesheet" href="../../static/css/Choice.css"/>
+</head>
+<body>
+    <div class="wrap">
+        <h1 class="header">Choice Menu</h1>
+        <table border="1" style="border-collapse: collapse;">
+            <p>
+                <br>
+                <a href="http://localhost:8111/choice/choice1">Animal</a>
+                <a href="http://localhost:8111/choice/choice2">Plants</a>
+                <a href="http://localhost:8111/choice/choice3">Aquarium</a>
+            </p>
+        </table>
+
+        <div class="menu-wrap">
+            <a href="http://localhost:8111/safari/home">Home</a>
+        </div>
+
+        <img th:src="@{/img/safariback2.png}" />
+        <!-- <img src="../../static/img/safariback2.png" alt="에코이미지"> -->
+    </div>
+</body>
+</html>

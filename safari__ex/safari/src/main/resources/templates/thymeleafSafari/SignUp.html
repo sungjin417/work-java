@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign Up</title>
+    <link rel="stylesheet" th:href="@{/css/SignUp.css}"/>
+    <link rel="stylesheet" href="../../static/css/SignUp.css"/>
+</head>
+<body>
+<div class="wrap">
+    <h1 class="header">Sign Up</h1>
+    <form th:action="@{/members/insert}" th:object="${userId}" method="post">
+        <div class="inputbox_css">
+            <label for="userId">ID : </label>
+            <input placeholder="아이디를 입력하세요." type="text" id="userId" th:field="*{userId}"/>
+        </div>
+        <div class="inputbox_css">
+            <label for="userPw">Pw : </label>
+            <input placeholder="비밀번호를 입력하세요." type="password" id="userPw" th:field="*{userPw}"/>
+        </div>
+        <div class="inputbox_css">
+            <label for="userName">Name : </label>
+            <input placeholder="이름을 입력하세요." type="text" id="userName" th:field="*{userName}"/>
+        </div>
+        <div class="inputbox_css">
+            <label for="userEmail">Email : </label>
+            <input placeholder="이메일을 입력하세요." type="text" id="userEmail" th:field="*{userEmail}"/>
+        </div>
+        <div class="inputbox_css">
+            <label for="userPhone">Phone : </label>
+            <input placeholder="핸드폰번호를 입력하세요." type="text" id="userPhone" th:field="*{userPhone}"/>
+        </div>
+        <div class="btnbox">
+            <Button type="submit">Join !</Button>
+        </div>
+    </form>
+
+    <div class="menu-wrap">
+        <a href="http://localhost:8118/ecohero/menu">Home</a>
+        <a href="http://localhost:8118/members/select">Login</a>
+    </div>
+
+    <img th:src="@{/img/safariback2.png}" />
+    <!-- <img src="../../static/img/safariback2.png" alt="에코이미지"> -->
+</div>
+</body>
+</html>
